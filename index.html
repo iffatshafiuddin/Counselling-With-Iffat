@@ -51,16 +51,34 @@
 	text-align: center;
 	}
 	ol {
- 	 list-style-type: none;
- 	 margin: 0;
- 	 padding: 0;
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 	}
-	li a {
-  	display: inline;
-  	padding: 8px;
-  	background-color: #eeeeee;
-	border: 5px;
-	}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
 </style>
 <style type="text/css">@media print {
         .TridactylStatusIndicator {
@@ -68,13 +86,12 @@
         }
     }</style></head>
 <body>
-<main>
-<h3 class="center" style="width: 61% !important">Learn to lower your anxiety</h3>
-
-		<ol class="center">
-  <li><a href="#home">Counselling</a></li>
+	<ol class="center">
+  <li><a class="active" href="#home">Counselling</a></li>
   <li><a href="#news">Yoga</a></li>
 </ol>
+<main>
+<h3 class="center" style="width: 61% !important">Learn to lower your anxiety</h3>
 
 	<h1 style="width: 61% !important">Counselling</h1>
 <img src="iffat.jpg" class="center">
